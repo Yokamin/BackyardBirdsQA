@@ -346,6 +346,11 @@ class TestFunctional:
 
         Steps: Ensure 12-hour time values display correctly.
         Asserts: AM/PM values, no crashes, format consistency.
+
+        Note: App displays relative time (e.g., "5 min, 30 sec") rather than
+        clock time, so AM/PM format is not applicable. Verified the relative
+        time format is consistent. Also tested with macBook set to 12-hour
+        format - same behavior.
         """
         from appium.webdriver.common.appiumby import AppiumBy
 
